@@ -9,10 +9,17 @@
 #map {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
+#map p {
+  margin: auto;
+  text-align: center;
+  line-height: 25rem; /* matches parent height for vertical centering */
+  color: #666;
+}
+
+.leaflet-container { touch-action: pan-x pan-y; cursor: grab; }
+.leaflet-dragging, .leaflet-dragging .leaflet-container { cursor: grabbing; }
 
 #share-controls {
   width: 40rem;
